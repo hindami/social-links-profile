@@ -1,0 +1,9 @@
+@media screen and (max-width: 375px) {
+  .card--container {
+    border-radius: 10px;
+    /* height: 579px; */
+    width: 327px;
+    padding: 24px;
+    background-color: var(--grey-800);
+  }
+}

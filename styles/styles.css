@@ -1,1 +1,120 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --grey-700: hsl(0, 0%, 20%);
+  --grey-800: hsl(0, 0%, 12%);
+  --grey-900: hsl(0, 0%, 8%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--grey-900);
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card--container {
+  border-radius: 13px;
+  /* height: 611px; */
+  width: 382px;
+  padding: 40px;
+  background-color: var(--grey-800);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.short-desc--container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.avatar-icon {
+  height: 94px;
+  width: 94px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.name {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--white);
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.location {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  color: var(--green);
+  margin-bottom: 30px;
+  text-align: center;
+  letter-spacing: 0.1px;
+}
+
+.short-desc {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  color: var(--white);
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.social-media-links--container {
+  width: 100%;
+  height: 289px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.social-media-links--button {
+  width: 100%;
+  height: 45px;
+  background-color: var(--grey-700);
+  border-radius: 5px;
+  color: var(--white);
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.1px;
+  line-height: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-media-links--button:hover,
+.social-media-links--button:focus,
+.social-media-links--button:active {
+  background-color: var(--green);
+  color: var(--grey-900);
+  border: none;
+  cursor: pointer;
+}
